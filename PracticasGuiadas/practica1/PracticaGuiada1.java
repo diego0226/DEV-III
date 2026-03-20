@@ -1,9 +1,9 @@
-package Clases.EstructuraDeDatos;
+package PracticasGuiadas.practica1;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Main {
+public class PracticaGuiada1 {
     public static void main(String[] args) {
         Collection<String> vehiculos = new ArrayList<String>();
         System.out.println("<<<< Size/Empty >>>>>");
