@@ -2,6 +2,7 @@ package Clases.EstructuraDeDatos;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class Main {
         System.out.println();
 
         System.out.println("<<<< AddAll >>>>>");
-        Collection<String> carros = new ArrayList<>();
+        List<String> carros = new ArrayList<>();
         carros.add("Corvette");
         carros.add("Camaro");
         carros.addAll(vehiculos);

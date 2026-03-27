@@ -2,6 +2,7 @@ package PracticasGuiadas.practica1;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class PracticaGuiada1 {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class PracticaGuiada1 {
         System.out.println();
 
         System.out.println("<<<< AddAll >>>>>");
-        Collection<String> carros = new ArrayList<>();
+        List<String> carros = new ArrayList<>();
         carros.add("Corvette");
         carros.add("Camaro");
         carros.addAll(vehiculos);
@@ -43,11 +44,32 @@ public class PracticaGuiada1 {
         System.out.println();
 
         System.out.println("<<<< Remove >>>>>");
-        System.out.println("Se eliminó Camaro:" + carros.remove("Camaro"));
+        System.out.println("Se eliminó carro:" + carros.remove("carro"));
         System.out.println();
 
-        System.out.println("<<<< RemoveAll>>>>>");
+        System.out.println("<<<< RemoveAll >>>>>");
         System.out.println("Se borró la lista vehiculos: " + vehiculos.removeAll(vehiculos));
-        System.out.println();        
+        System.out.println();
+        
+        System.out.println("<<<< LIST/GET >>>>>");
+        System.out.println("Posicion 0: " + carros.get(0));
+        System.out.println();
+
+        System.out.println("<<<< LIST/SET >>>>>");
+        carros.set(2, "Pontiac");
+        carros.forEach(carro -> System.out.println("[" + carro + "]"));
+        System.out.println();
+
+        System.out.println("<<<< LIST/indexOf >>>>>");
+        System.out.println("En que posicion esta corvette: " + carros.indexOf("Corvette"));
+        System.out.println();
+
+        System.out.println("<<<< LIST/Remove >>>>>");
+        System.out.println("Se elimina el: " + carros.remove(2));
+        System.out.println();
+        
+
+
+
     }
 }
