@@ -35,9 +35,11 @@ public class Product implements Comparable <Product>{
         this.quantity = quantity;
     }
 
+    
+
     @Override
     public String toString() {
-        return "Product: name: " + name + ", quantity: " + quantity;
+        return "Product [name=" + name + ", price=$" + price + ", quantity=" + quantity + "]";
     }
 
     @Override

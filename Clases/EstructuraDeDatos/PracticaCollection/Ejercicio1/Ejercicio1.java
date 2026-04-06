@@ -1,4 +1,4 @@
-package Clases.EstructuraDeDatos.PracticaCollection;
+package Clases.EstructuraDeDatos.PracticaCollection.Ejercicio1;
 
 import java.util.ArrayList;
 
