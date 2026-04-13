@@ -1,9 +1,8 @@
 package PracticasGuiadas.practica2.Factory;
 
-public class CreditCardFactory implements Factory{
+public class CreditCardFactory extends Factory{
 
-    @Override
-    public Payment createPaymets() {
+    public CreditCard createPaymets() {
         return new CreditCard(150, true);
     }
     

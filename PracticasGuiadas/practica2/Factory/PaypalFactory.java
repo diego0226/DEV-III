@@ -1,9 +1,8 @@
 package PracticasGuiadas.practica2.Factory;
 
-public class PaypalFactory  implements Factory{
+public class PaypalFactory  extends Factory{
 
-    @Override
-    public Payment createPaymets() {
+    public Paypal createPaymets() {
         return new Paypal(100, false);
     }
     

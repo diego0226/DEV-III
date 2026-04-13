@@ -1,6 +1,6 @@
 package PracticasGuiadas.practica2.Factory;
 
-public interface Factory {
-    Payment createPaymets();
+public abstract class Factory {
+    abstract Payment createPaymets();
     
 } 
