@@ -14,11 +14,13 @@ public class Main {
     }
 
     public static void buscar(Map<String, Integer> list, String prefijo){
-        list.forEach((key, value) -> {
-            if (key.contains(prefijo)) {
-                System.out.println(key);
+       int sum = 0;
+        for (Map.Entry<String, Integer> a : list.entrySet()) {
+            if (a.getKey().contains(prefijo)) {
+                sum += a.getValue();
+                System.out.println(a.getKey());
             }
-        });
+        }
+        System.out.println("Suma: " + sum);
     }
-    
 }
