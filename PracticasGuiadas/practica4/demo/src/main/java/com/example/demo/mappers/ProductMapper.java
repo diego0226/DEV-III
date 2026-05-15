@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import com.example.demo.dtos.ProductResponseDTO;
 import com.example.demo.entities.Product;
+import com.example.demo.models.ProductResponseModel;
 
 @Component
 public class ProductMapper {
@@ -27,14 +28,15 @@ public class ProductMapper {
                 .collect(Collectors.toList());
     }
 
-    public ProductResponseDTO toProductResponseModel(ProductResponseDTO productDTO) {
+    //El que ya se va mostrar al usuario
+    public ProductResponseModel toProductResponseModel(ProductResponseDTO productDTO) {
         if (productDTO == null) {
             return null;
         }
-        return new ProductResponseDTO(productDTO.nombre(), productDTO.descripcion(), productDTO.precio());
+        return new ProductResponseModel(productDTO.nombre(), productDTO.descripcion(), productDTO.precio());
     }
 
-    public List<ProductResponseDTO> toProductResponseModelList(List<ProductResponseDTO> productsResponseDTO) {
+    public List<ProductResponseModel> toProductResponseModelList(List<ProductResponseDTO> productsResponseDTO) {
         if (productsResponseDTO == null) {
             return null;
         }
