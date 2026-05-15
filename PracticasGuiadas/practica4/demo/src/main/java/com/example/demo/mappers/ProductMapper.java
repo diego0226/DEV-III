@@ -15,7 +15,7 @@ public class ProductMapper {
         if (product == null) {
             return null;
         }
-        return new ProductResponseDTO(product.getNombre(), product.getDescripcion(), product.getPrecio());
+        return new ProductResponseDTO(product.getResourceId(), product.getNombre(), product.getDescripcion(), product.getPrecio());
     }
 
     public List<ProductResponseDTO> toProductDtoList(List<Product> products) {
@@ -33,7 +33,7 @@ public class ProductMapper {
         if (productDTO == null) {
             return null;
         }
-        return new ProductResponseModel(productDTO.nombre(), productDTO.descripcion(), productDTO.precio());
+        return new ProductResponseModel(productDTO.resourceID(), productDTO.nombre(), productDTO.descripcion(), productDTO.precio());
     }
 
     public List<ProductResponseModel> toProductResponseModelList(List<ProductResponseDTO> productsResponseDTO) {
